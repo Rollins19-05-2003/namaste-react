@@ -2,7 +2,8 @@
 // const root = ReactDOM.createRoot(document.getElementById("header"));
 // root.render(heading);
 
-
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const parent = React.createElement("div", {id:"parent"},
     [
