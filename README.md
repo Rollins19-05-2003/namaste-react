@@ -30,4 +30,4 @@ this repo contains code for every episode
 -   contact
 
 # notes
-https://excalidraw.com/#json=xfDwu4Xbhk-7KpBunj6BP,gYpyNVKFZWaVKFy6O5IhtQ
+https://excalidraw.com/#json=IcN-C0DWPnUhdDx2dcewF,4NSIHh6NgJEBpB_5toK1Ug
