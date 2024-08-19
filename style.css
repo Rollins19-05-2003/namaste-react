@@ -1,3 +1,64 @@
-#heading{
-    color: rebeccapurple;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#root{
+    color: black;
+}
+
+.header{
+    background-color: bisque;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items > ul{
+    display: flex;
+}
+
+.nav-items > ul > li{
+    list-style-type: none;
+    padding: 0px 10px 0px 10px;
+}
+
+.body{
+    background-color: rgb(224, 235, 245);
+    width: 100%;
+}
+.search{
+    margin: 1rem;
+}
+
+.search > input{
+    margin-top: 1rem;
+    padding: 0.6rem;
+    width: 80%;
+    position: relative;
+    left: 2.5rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.logo > img{
+    width: 5.4rem;
+}
+
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.res-card{
+    width: 230px;
+    height: 420px;
+    margin: 0.5rem 1rem;
+    background-color: #f0f0f0;
+}
+.res-data{
+    padding: 8px;
+}
+.res-logo{
+    width: 100%;
 }

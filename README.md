@@ -12,5 +12,22 @@ this repo contains code for every episode
 - Bundling
 - Compress
 
+# Skeleton for our food-app
+- header
+-   logo
+-   nav-items
+- body
+-   search
+-   restaurant container
+-       restaurant card
+-           name
+-           cuisines
+-           ratings, etc..
+- footer
+-   copyright
+-   links
+-   address
+-   contact
+
 # notes
-https://excalidraw.com/#json=zN15ObXSuuISj3ke4Tu1D,VzQKehqFdhFtYKcLnHs2ew
+https://excalidraw.com/#json=xfDwu4Xbhk-7KpBunj6BP,gYpyNVKFZWaVKFy6O5IhtQ
