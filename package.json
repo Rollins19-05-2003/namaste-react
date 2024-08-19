@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "I am learning react",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html",
+    "build" : "parcel build index.html"
   },
   "author": "Sourav Deb",
   "license": "ISC",

@@ -13,4 +13,4 @@ this repo contains code for every episode
 - Compress
 
 # notes
-https://excalidraw.com/
+https://excalidraw.com/#json=zN15ObXSuuISj3ke4Tu1D,VzQKehqFdhFtYKcLnHs2ew
