@@ -28,23 +28,34 @@
     background-color: rgb(224, 235, 245);
     width: 100%;
 }
-.search{
-    margin: 1rem;
+
+
+.body-navbar{
+    display: flex;
+    justify-content: space-between;
 }
 
-.search > input{
-    margin-top: 1rem;
+.search-input{
+    margin-top:1rem;
     padding: 0.6rem;
-    width: 80%;
+    width: 20rem;
     position: relative;
     left: 2.5rem;
     border-radius: 1rem;
     border: none;
 }
+.search-button{
+    cursor: pointer;
+    padding: 8px;
+    margin-left:3rem;
+    margin-top:1rem;
+    font-weight: bold;
+    background-color: rgb(95, 239, 131);
+    border: 1px solid rgb(46, 50, 40);
+    border-radius: 4px;
 
+}
 .filter{
-    display: flex;
-    flex-direction: row-reverse;
     position: relative;
     right: 2rem;
 }
@@ -52,6 +63,7 @@
 .filter-btn{
     cursor: pointer;
     padding: 8px;
+    margin-top:1rem;
     font-weight: bold;
     background-color: rgb(95, 239, 131);
     border: 1px solid rgb(46, 50, 40);
@@ -77,4 +89,21 @@
 }
 .res-logo{
     width: 100%;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card{
+    background-color: #f0f0f0;
+    width: 230px;
+    height: 420px;
+    margin: 0.5rem 1rem;
+}
+.login-btn{
+    padding: 3px;
+    margin: 0rem 1rem;
+    cursor: pointer;
 }

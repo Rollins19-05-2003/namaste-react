@@ -1,7 +1,7 @@
 const resList = [
     {
       type: 'restaurant',
-      data: {
+      info: {
         type: 'F',
         id: '121603',
         name: 'Kannur Food Point',
@@ -142,7 +142,7 @@ const resList = [
     },
     {
       type: 'restaurant',
-      data: {
+      info: {
         type: 'F',
         id: '229',
         name: 'Meghana Foods',
@@ -245,7 +245,7 @@ const resList = [
     },
     {
       type: 'restaurant',
-      data: {
+      info: {
         type: 'F',
         id: '428',
         name: 'Biryani Pot',
@@ -380,7 +380,7 @@ const resList = [
     },
     {
       type: 'restaurant',
-      data: {
+      info: {
         type: 'F',
         id: '223',
         name: 'Truffles',
@@ -521,7 +521,7 @@ const resList = [
     },
     {
       type: 'restaurant',
-      data: {
+      info: {
         type: 'F',
         id: '425',
         name: 'Hotel Empire',
@@ -657,7 +657,7 @@ const resList = [
     },
     {
       type: 'restaurant',
-      data: {
+      info: {
         type: 'F',
         id: '201224',
         name: 'Asha tiffins',
@@ -798,7 +798,7 @@ const resList = [
     },
     {
       type: 'restaurant',
-      data: {
+      info: {
         type: 'F',
         id: '59593',
         name: 'Al Daaz',
@@ -900,7 +900,7 @@ const resList = [
     },
     {
       type: 'restaurant',
-      data: {
+      info: {
         type: 'F',
         id: '56589',
         name: 'Roti-Wala',
@@ -1043,7 +1043,7 @@ const resList = [
     },
     {
       type: 'restaurant',
-      data: {
+      info: {
         type: 'F',
         id: '560153',
         name: 'Rice Bowl',

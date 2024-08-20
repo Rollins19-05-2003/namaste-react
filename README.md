@@ -13,21 +13,21 @@ this repo contains code for every episode
 - Compress
 
 # Skeleton for our food-app
-- header
--   logo
--   nav-items
-- body
--   search
--   restaurant container
--       restaurant card
--           name
--           cuisines
--           ratings, etc..
-- footer
--   copyright
--   links
--   address
--   contact
+* header
+*   logo
+*   nav-items
+* body
+*   search
+*   restaurant container
+*       restaurant card
+*           name
+*           cuisines
+*           ratings, etc..
+* footer
+*   copyright
+*   links
+*   address
+*   contact
 
 # notes
-https://excalidraw.com/#json=IcN-C0DWPnUhdDx2dcewF,4NSIHh6NgJEBpB_5toK1Ug
+https://excalidraw.com/#json=eC0P1WDUs_uKvuIuVYfpZ,lE01yurdAIPBcVmUF-Fpzg
