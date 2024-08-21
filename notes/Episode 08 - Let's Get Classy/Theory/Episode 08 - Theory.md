@@ -17,7 +17,7 @@ For more reference [React-Lifecycle-methods-Diagram](https://projects.wojtekmaj.
 ## Q: Why do we use `componentDidMount`?
 
 A: The `componentDidMount()` method allows us to execute the React code when the component is already placed in the DOM (Document Object Model). This method is called during the Mounting phase of the React Life-cycle i.e after the component is rendered.
-Wwe can run any piece of react code to modify the components. For ex. It's the best place to `make API calls`.
+We can run any piece of react code to modify the components. For ex. It's the best place to `make API calls`.
 
 ## Q: Why do we use `componentWillUnmount`? Show with example.
 
@@ -33,3 +33,35 @@ The main difference between super() and super(props) is the this.props is undefi
 ## Q: (Research) Why can't we have the `callback function` of `useEffect async`?
 
 A: `useEffect` expects it's callback function to return nothing or return a function (cleanup function that is called when the component is unmounted). If we make the callback function as `async`, it will return a `promise` and the promise will affect the clean-up function from being called.
+
+## Problem with SPA (Single Page Application)
+Suppose, when you have a setInterval(1000) of 1sec in one about page of our application in componentDidMount() and since componentDidMount() is trigger every time we come into the about page then following problem occurs : 
+    - It keeps on calling setTimeInterval() again and again even when we change to other page like contact, home page, etc.. because its a SPA so our page doesnot gets refresh only the component is rendered/mounted again so going to other page also triggered setInterval().
+
+    - When we go to about page again from contact suppose then the setInterval() time increase from 1sec to 2sec.
+
+    - So, we use this.clearInterval() in ComponentWillUnmount() method to unmount the components when we move to new page. 
+
+# Since all of it happend in class component what is its alternative in functional component? 
+- In functional component, we use return keyword which works exactly same as unmounted() i.e., will trigger when we leave the page. 
+  For example : 
+  useEffect(() =>{
+    console.log("use Effect");
+
+    return ()=>{
+        console.log("use Effect return");
+    }
+  }, [])
+
+    return(
+        console.log("render");
+    )
+
+    Output will be as follows : 
+        - 1st : render
+        - 2nd : useEffect
+    ---- end ----
+    But when will the use Effect return print in the console? Remember it behave as a unmounted function and this will only be triggered when we change to other page and hence when we leave the current page by clicking on other page suppose contact then the 3rd output will
+    be printed i.e., "use Effect return"
+
+    In the image above, see the commented line if we write setInterval inside useEffect() functional component then it will also keep printing "Namaste react OP" after every second. And, when we move to new page it will speed up the printing and will never stop so we have to use return just like unmounted in class component.

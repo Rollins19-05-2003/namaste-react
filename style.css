@@ -79,14 +79,21 @@
     flex-wrap: wrap;
 }
 .res-card{
-    width: 230px;
-    height: 420px;
-    margin: 0.5rem 1rem;
+    width: 300px;
+    height: 350px;
+    margin: 0.5rem 1rem 6rem 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     background-color: #f0f0f0;
+}
+.res-card > img{
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 .res-data{
     padding: 8px;
 }
+
 .res-logo{
     width: 100%;
 }
@@ -107,3 +114,111 @@
     margin: 0rem 1rem;
     cursor: pointer;
 }
+
+/* * Menu page */
+.menu-header {
+    height: 30vh;
+    background-color: #000;
+    color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .menu-header .menu-header-left img {
+    width: 250px;
+    height: 170px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .menu-header .menu-header-right .top h1 {
+    font-size: 40px;
+    font-weight: normal;
+  }
+  
+  .menu-header .menu-header-right .top h3 {
+    font-weight: normal;
+    opacity: 0.7;
+    margin-top: 5px;
+  }
+  
+  .menu-header .menu-header-right .bottom {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .menu-header .menu-header-right .bottom h4 {
+    border-right: 4px solid #ccc;
+    padding-right: 20px;
+  }
+  
+  .menu-main {
+    margin: 80px 150px;
+  }
+  
+  .menu-main h2 {
+    font-size: 30px;
+    opacity: 0.8;
+  }
+  
+  .menu-main .items {
+    font-size: 14px;
+    opacity: 0.6;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  
+  .menu-main-card-container {
+    margin-top: 50px;
+    border-radius: 7px;
+  }
+  
+  .menu-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #3b3a3a;
+  }
+  
+  .menu-card-left .menu-name {
+    font-size: 24px;
+    opacity: 0.8;
+  }
+  
+  .menu-card-left .menu-price {
+    font-weight: normal;
+    opacity: 0.8;
+    margin-top: 5px;
+  }
+  
+  .menu-card-left .menu-description {
+    font-weight: normal;
+    opacity: 0.8;
+    margin-top: 15px;
+  }
+  
+  .menu-card-right img {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+  .res-data > h3{
+    color: black;
+    text-decoration: dotted;
+  }
+  .res-data > h4{
+    color: black;
+  
+  }
