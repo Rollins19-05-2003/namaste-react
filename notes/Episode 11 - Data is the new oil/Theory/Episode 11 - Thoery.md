@@ -8,5 +8,6 @@
 
 - Seperation of a React Application into UI-Layer and Data-Layer
 - Controlled and Uncontrolled Components
-- Prop Driling
+- Lifting up the state
+- Prop Drilling
 - Context API in React

@@ -1,33 +1,38 @@
 import {LOGO_URL} from "../utils/constants"
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Header = () =>{
     let btnName = "Login"
     const [btnNameReact, setBtnNameReact] = useState('Login');
+    const onlineStatus = useOnlineStatus();
+    const { loggedInUser } = useContext(UserContext);
 
     return(
-        <div className="header">
-            <div className="logo-container">
-                <div className="logo">
+        <div className="flex justify-between bg-pink-100  sm:bg-yellow-200 lg:bg-green-200">
+            <div className="w-40 ml-4">
                     <img src={LOGO_URL} />
-                </div>
             </div>
-            <div className="nav-items">
-                <ul>
-                    <li> <Link to="/home">Home</Link> </li>
-                    <li> <Link to="/about">About Us</Link> </li>
-                    <li> <Link to="/contact">Contact</Link> </li>
-                    <li> <Link to="/cart">Cart</Link> </li>
-                    <button className="login-btn" onClick={()=>{
+            <div className="flex items-center">
+                <ul className="flex mr-4">
+                    <li className="px-4 font-semibold"> <Link to="/home">Home</Link> </li>
+                    <li className="px-4 font-semibold"> <Link to="/about">About Us</Link> </li>
+                    <li className="px-4 font-semibold"> <Link to="/contact">Contact</Link> </li>
+                    <li className="px-4 font-semibold"> <Link to="/cart">Cart</Link> </li>
+                    <li className="px-4 font-semibold"> <Link to="/grocery">Grocery</Link> </li>
+                    <li className="px-4">
+                        {onlineStatus===true ? "🟢" : "🔴"}
+                    </li>
+                    <button className="font-semibold bg-blue-500 hover:bg-blue-700 text-white py-1 px-4 rounded cursor-pointer" onClick={()=>{
                         btnNameReact === 'Login'
                         ? setBtnNameReact('Logout')
                         : setBtnNameReact('Login');
-                        // btnName = "Logout"
                     }}>
-                        {/* {btnName} */}
                         {btnNameReact}
                     </button>
+                    <li className="px-4 font-semibold flex items-center"> {loggedInUser}</li>
                 </ul>
             </div>
         </div>

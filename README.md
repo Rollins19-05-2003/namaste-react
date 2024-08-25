@@ -29,5 +29,15 @@ this repo contains code for every episode
 *   address
 *   contact
 
+
+# Episode 11 - Data is the new oil
+### Topics Covered:
+
+- Seperation of a React Application into UI-Layer and Data-Layer
+- Controlled and Uncontrolled Components
+- Lifting up the state
+- Prop Drilling
+- Context API in React (createContext(), useContext(), <UserContext.Consumer/>, <UserContext.Provider/>)
+
 # notes
-https://excalidraw.com/#json=wiGB5PHvv9xhqCkyrKGT6,kdS9_850iJaa5llqEJddRw
+https://excalidraw.com/#json=WqAD-dbNFf32rCl2OQcRZ,ZXoAsjTb5VDnMysiNGEpkg
