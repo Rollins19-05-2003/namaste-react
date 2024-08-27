@@ -40,4 +40,4 @@ this repo contains code for every episode
 - Context API in React (createContext(), useContext(), <UserContext.Consumer/>, <UserContext.Provider/>)
 
 # notes
-https://excalidraw.com/#json=WqAD-dbNFf32rCl2OQcRZ,ZXoAsjTb5VDnMysiNGEpkg
+https://excalidraw.com/#json=XxlHoFtwsoXnDZ_n00AH1,pyD7bA95pFghBHFkR23Qjw
