@@ -1,7 +1,14 @@
 import { AiFillStar } from "react-icons/ai";
 import { RES_LOGO_URL } from "../utils/constants";
+import { useDispatch } from "react-redux";
+import { addItem } from "../utils/cartSlice";
 
 const ItemList = ({items}) =>{
+    const dispatch = useDispatch();
+    const handleAddItem = (item) =>{
+        // dispatch an action
+        dispatch(addItem(item));
+    }
     return(
         <div>
             {items.map((item) =>(
@@ -15,6 +22,13 @@ const ItemList = ({items}) =>{
                         <h3 className=" text-gray-700"> {item.card.info.description}</h3>
                     </div>
                     <div className="w-3/12">
+                        <div className="absolute">
+                            <button className="p-2 ml-[70px] mt-[160px] rounded-lg bg-black text-white shadow-lg hover:bg-white  hover:text-black transition-all duration-[.3s]" 
+                            onClick={()=>handleAddItem(item)}
+                            >
+                                Add +
+                            </button>
+                        </div>
                         <img src={RES_LOGO_URL +item.card.info.imageId} className="w-full rounded-lg h-60"></img>
                     </div>
                 </div>
